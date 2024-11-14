@@ -44,6 +44,33 @@ class UserPosts extends StatelessWidget {
           height: 300,
           color: Colors.grey[300],
         ),
+        const Padding(
+          padding: EdgeInsets.all(15),
+          child: Row(
+            mainAxisAlignment: MainAxisAlignment.spaceBetween,
+            children: [
+              Row(
+                children: [
+                  Icon(
+                    Icons.favorite,
+                  ),
+                  Padding(
+                    padding: EdgeInsets.symmetric(horizontal: 10),
+                    child: Icon(
+                      Icons.chat_bubble_outline,
+                    ),
+                  ),
+                  Icon(
+                    Icons.share,
+                  ),
+                ],
+              ),
+              Icon(
+                Icons.bookmark,
+              ),
+            ],
+          ),
+        ),
       ],
     );
   }
