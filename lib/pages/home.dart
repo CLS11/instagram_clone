@@ -48,7 +48,16 @@ class UserHome extends StatelessWidget {
               },
             ),
           ),
-          const UserPosts(name: 'Becky'),
+          Expanded(
+            child: ListView.builder(
+              itemCount: people.length,
+              itemBuilder: (context, index) {
+                return const UserPosts(
+                  name: 'Becky',
+                );
+              },
+            ),
+          ),
         ],
       ),
     );
